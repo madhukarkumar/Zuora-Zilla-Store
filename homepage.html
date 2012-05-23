@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>zuora</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js" /></script>
+<script type="text/javascript" src="js/jquery.cookie.js" /></script>
+<script type="text/javascript" src="js/function.js" /></script>
+</head>
+
+<body>
+<div id="web_main">
+	<div class="tip">
+		<span onclick="change_tip()" class="tip_button" direction="left" speed="normal">Post-It</span>
+	</div>
+	<div class="tip_area">
+		<div id="inner">
+			<div id="inner_block">
+				<ul id="tip1">
+					<li>Subscription confirmation</li>
+					<li>Ability to change rate plan</li>
+					<li>Ability to update billing information</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<div id="top">
+	<h1 id="logo"><a href="index.html">Z Store</a></h1>
+	<script type="text/javascript">
+		login_type();
+	</script>
+</div>
+
+<div id="main">
+	<div id="loading" style="display:block;">
+		 loading...<img src="images/loading.gif" />
+	</div>
+	<h1><span id="h1_firstname"></span> <span id="h1_lastname"></span>, Welcome to My <img src="images/logo_small.gif" /></h1>
+	<div style="padding:12px;">
+		<p id="invoicebalance_area" style="display:none;" class="billing_balance"><strong>Your current balance is <span id="invoice_balance" class="font-red font-24"></span></strong></p>
+		<div class="home_colum_2 clear-block">
+			<div class="home_colum_2_1">
+				<div id="invoice_block" style="display:none;">
+					<div class="block clear-block">
+						<table cellpadding="0" cellspacing="0" border="0" width="100%">
+							<tr>
+								<td width="40"><img src="images/word_ico.gif" /></td>
+								<td>
+									<table  cellpadding="0" cellspacing="0" border="0" width="100%">
+										<tr>
+											<td colspan="2">Your last invoice is <strong id="invoice_number" class="font-red"></strong>, total amount is <strong id="invoice_amount" class="font-red"></strong></td>
+										</tr>
+										<tr>
+											<td width="50%"><span class="font-gray">Invoice Date:</span> <span id="invoice_date" class="font-red"></span></td>
+											<td><span class="font-gray">Due Date:</span> <span id="due_date" class="font-red"></span></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<a id="allinvoice_link" href="#" class="button_link right"><span>View all invoices</span></a>
+					<br class="clear" />
+				</div>
+				<div class="block-gray clear-block">
+					<h4>Current Plan</h4>
+					<table style="display:none;" cellpadding="0" cellspacing="0" border="0" width="100%" class="table_style_3" id="plan_fb">
+						<tr class="title">
+							<td width="205"><strong>Item Description</strong></td>
+							<td width="100"><strong>Pirce</strong></td>
+							<td width="100"><strong>user</strong></td>
+							<td><strong>Total</strong></td>
+						</tr>
+						<tr class="block">
+							<td colspan="4">
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+									<tr>
+										<td colspan="4"><strong class="font-red font-14">Z-Factory Team 2</strong></td>
+									</tr>
+									<tr>
+										<td width="205" class="item_td"><span>Team Quarterly Billing</span></td>
+										<td width="100"><span>$10</span></td>
+										<td width="100"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="item_td"></td>
+										<td><span>$36/Each</span></td>
+										<td><span>30</span></td>
+										<td><strong>$1090</strong></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table style="display:none;" cellpadding="0" cellspacing="0" border="0" width="100%" class="table_style_3" id="plan_area">
+						<tr class="title">
+							<td width="205"><strong>Item Description</strong></td>
+							<td width="100"><strong>Pirce</strong></td>
+							<td width="100"><strong id="username"></strong></td>
+							<td><strong>Total</strong></td>
+						</tr>
+						<tr class="block">
+							<td colspan="4">
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+									<tr>
+										<td colspan="4"><strong class="font-red font-14" id="productName"></strong></td>
+									</tr>
+									<tr>
+										<td width="205" class="item_td"><span id="planName"></span></td>
+										<td width="100"><span id="productFee"></span></td>
+										<td width="100"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="item_td"></td>
+										<td><span id="productEachPrice"></span></td>
+										<td><span id="uomNum"></span></td>
+										<td><strong id="total_num"></strong></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<p><a href="javascript:change_plan()" class="button_link right"><span>change plan</span></a></p>
+				</div>
+			</div>
+			<div class="home_colum_2_2">
+				<div class="info_block">
+					<h4 class="font-red">Your information</h4>
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td width="150"><span class="font-gray">Email Address:</span></td>
+							<td><strong id="email"></strong></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">First Name:</span></td>
+							<td><strong id="firstname"></strong></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Last Name:</span></td>
+							<td><strong id="lastname"></strong></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Phone:</span></td>
+							<td><strong id="phone"></strong></td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="info_block">
+					<h4 class="font-red">Your company</h4>
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td width="150"><span class="font-gray">Company:</span></td>
+							<td id="company"></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Country:</span></td>
+							<td id="country"></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Address:</span></td>
+							<td id="address"></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">City:</span></td>
+							<td id="city"></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">State:</span></td>
+							<td id="state"></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Postal Code:</span></td>
+							<td id="postal_code"></td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="info_block">
+					<h4 class="font-red">Payment Method</h4>
+					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+						<tr>
+							<td width="150"><span class="font-gray">Payment Type:</span></td>
+							<td id="payment_type"></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Credit Card Name:</span></td>
+							<td><strong id="pay_cardname"></strong></td>
+						</tr>
+						<tr>
+							<td><span class="font-gray">Credit Card Number:</span></td>
+							<td><strong id="pay_account"></strong></td>
+						</tr>
+					</table>
+				</div>
+				<a href="update_information.html" class="button_link left"><span>Update billing information</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="foot">
+	<ul>
+		<li><a href="#">About Zuora</a></li>
+		<li><a href="#">News & Press</a></li>
+		<li><a href="#">Privacy</a></li>
+		<li><a href="#">Careers</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+	<p>Copyright &copy; 2008, Zuora Inc. All Rights Reserved. Various trademarks held by their respective owners.</p>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+		$.getJSON("backend/?type=GetUserInfo",
+        function(data){
+        	alert("data is " + data.success);
+	
+			if(data.success == 0) {
+				$("#loading").css("display","none");
+				//addError(data.msg);
+			}
+			else {
+				$("#loading").css("display","none");
+				var data_msg = data.msg;
+				enter_message(data_msg);
+			}
+        });
+});
+var enter_message = function(obj){
+	$("#email").html(obj.contactInfo.WorkEmail);
+	$("#firstname").html(obj.contactInfo.FirstName);
+	$("#h1_firstname").html(obj.contactInfo.FirstName);
+	$("#lastname").html(obj.contactInfo.LastName);
+	$("#h1_lastname").html(obj.contactInfo.LastName);
+	
+	$("#phone").html(obj.contactInfo.WorkPhone);
+	$("#company").html(obj.accountInfo.Name);
+	$("#country").html(obj.contactInfo.Country);
+	$("#address").html(obj.contactInfo.Address1);
+	$("#city").html(obj.contactInfo.City);
+	$("#state").html(obj.contactInfo.State);
+	$("#postal_code").html(obj.contactInfo.PostalCode);
+	if(obj.paymentInfo.CreditCardType == "MasterCard"){
+		$("#payment_type").html('<img style="vertical-align: middle;" src="images/mastercard_small_ico.gif" /> <strong>'+obj.paymentInfo.CreditCardType+'</strong>');
+	}
+	if(obj.paymentInfo.CreditCardType == "Visa"){
+		$("#payment_type").html('<img style="vertical-align: middle;" src="images/visa_small_ico.gif" /> <strong>'+obj.paymentInfo.CreditCardType+'</strong>');
+	}
+	if(obj.paymentInfo.CreditCardType == "American Express"){
+		$("#payment_type").html('<img style="vertical-align: middle;" src="images/american_express_small_ico.gif" /> <strong>'+obj.paymentInfo.CreditCardType+'</strong>');
+	}
+	$("#pay_cardname").html(obj.paymentInfo.CreditCardHolderName);
+	$("#pay_account").html(obj.paymentInfo.CreditCardMaskNumber);
+	
+	$("#allinvoice_link").attr("href","user_billing_data.html?firstname="+escape(obj.contactInfo.FirstName)+"&lastname="+escape(obj.contactInfo.LastName));
+	if(obj.invoiceInfo == null){
+		$("#invoice_block").css("display","none");
+		$("#invoicebalance_area").css("display","none");
+	}else{
+		$("#invoice_block").css("display","block");
+		$("#invoicebalance_area").css("display","block");
+		$("#invoice_balance").html("$"+obj.invoiceInfo.Balance);
+		$("#invoice_number").html(obj.invoiceInfo.InvoiceNumber);
+		$("#invoice_amount").html("$"+obj.invoiceInfo.Amount);
+		var invoice_date = parseDateToString(obj.invoiceInfo.InvoiceDate);
+		var due_date = parseDateToString(obj.invoiceInfo.DueDate);
+		$("#invoice_date").html(invoice_date);
+		$("#due_date").html(due_date);
+	}
+	
+	if($.cookie('productName')){
+		$.cookie('plan_state','complete');
+	}
+	var plan_state_text = $.cookie('plan_state');
+	if(plan_state_text == "complete"){
+		$("#username").html($.cookie('uomname'));
+		$("#productName").text($.cookie('productName'));
+		$("#planName").html($.cookie('planName'));
+		$("#productFee").html($.cookie('productFee'));
+		$("#productEachPrice").html($.cookie('productPrice'));
+		$("#username").html($.cookie('uomname'));
+		$("#uomNum").html($.cookie('uomnum'));
+		$("#total_num").html($.cookie('totalnum'));
+		$.cookie('plan_state','close');
+		
+		$("#plan_fb").css("display","none");
+		$("#plan_area").css("display","");
+	}else{
+		$("#plan_fb").css("display","");
+		$("#plan_area").css("display","none");
+	}
+	
+}
+
+var change_plan = function(){
+	$.cookie('plan_state', 'open');
+	window.location.href="product_list.html";
+}
+
+
+</script>
+</body>
+</html>

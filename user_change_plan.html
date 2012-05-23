@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>zuora</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/thickbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js" /></script>
+<script type="text/javascript" src="js/jquery.cookie.js" /></script>
+<script type="text/javascript" src="js/thickbox.js" /></script>
+<script type="text/javascript" src="js/function.js" /></script>
+</head>
+
+<body>
+<div id="top">
+	<h1 id="logo"><a href="index.html">Z Store</a></h1>
+	<script type="text/javascript">
+		login_type();
+	</script>
+</div>
+<div id="main">
+	<div id="loading">
+		 loading...<img src="images/loading.gif" />
+	</div>
+	<div id="infor" class="error_message clear-block">
+		<div class="block_message">
+			Error message
+		</div>
+	</div>
+	<h1>Joseph Customer, Welcome to My <img src="images/logo_small.gif" /></h1>
+	<div style="margin:0px auto 30px; width:810px;">
+		<h3>Your Current Plan</h3>
+		<h3 class="font-red">Z-Factory Workgroup</h3>
+		<table cellpadding="0" cellspacing="0" border="0" width="80%" class="table_style_2">
+			<tr class="title">
+				<td><strong>Plan name</strong></td>
+				<td><strong>Setup Fee</strong></td>
+				<td><strong>Monthly Fee</strong></td>
+				<td><strong>Cost per User</strong></td>
+				<td><strong># of Users</strong></td>
+			</tr>
+			<tr>
+				<td><strong class="font-red">Startup</strong></td>
+				<td><strong>$60.00</strong></td>
+				<td>$15/month</td>
+				<td>$20.00</td>
+				<td><span class="font-gray">1-4</span></td>
+			</tr>
+		</table>
+		<a href="plan_pop.html?height=286&width=542&inlineId=hiddenModalContent&modal=true" rel="thickbox" class="button_link left thickbox"><span>keep current plan</span></a>
+		<br class="clear" />
+		<h3 style="margin-top:30px;">Change Your Plan</h3>
+		<p class="font-gray" style="margin-bottom:15px;">To change your plan, please select from the list of available plans below, then click the button <a href="#">chang plan</a>.<br />Changes made to your plan will effect at the start of your next billing cycle.</p>
+		<form action="" method="post">
+			<h4>Rate Plans</h4>
+			<div class="field_area">
+				<table cellpadding="0" cellspacing="0" border="0" width="100%" class="table_style_1 table_rateplan">
+					<tr class="title">
+						<td>&nbsp;</td>
+						<td><strong>Plan name</strong></td>
+						<td><strong>Setup Fee</strong></td>
+						<td><strong>Monthly Fee</strong></td>
+						<td><strong>Cost per User</strong></td>
+						<td><strong># of Users</strong></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr class="current_plan">
+						<td class="text_center"><input type="radio" name="rate_plan_num" class="radio" /></td>
+						<td><strong>Startup</strong></td>
+						<td><strong>$60.00</strong></td>
+						<td><span>$15/month</span></td>
+						<td><span>$20.00</span></td>
+						<td><span class="font-gray">1-4</span></td>
+						<td class="current_td"><strong class="font-red">current plan</strong></td>
+					</tr>
+					<tr>
+						<td class="text_center"><input type="radio" name="rate_plan_num" class="radio" /></td>
+						<td><strong>Individual Basic</strong></td>
+						<td><strong>$100.00</strong></td>
+						<td><span>$20/month</span></td>
+						<td><span>$15.00</span></td>
+						<td><span class="font-gray">5-9</span></td>
+						<td class="current_td">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="text_center"><input type="radio" name="rate_plan_num" class="radio" /></td>
+						<td><strong>Individual Value</strong></td>
+						<td><strong>$200.00</strong></td>
+						<td><span>$30/month</span></td>
+						<td><span>$12.00</span></td>
+						<td><span class="font-gray">10-49</span></td>
+						<td class="current_td">&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="text_center"><input type="radio" name="rate_plan_num" class="radio" /></td>
+						<td><strong>Individual Unlimited</strong></td>
+						<td><strong>$500.00</strong></td>
+						<td><span>$50/month</span></td>
+						<td><span>$10.00</span></td>
+						<td><span class="font-gray">50+</span></td>
+						<td class="current_td">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+			<div class="button_area no-border clear-block">
+				<a class="button_link left" style="margin-right:10px;" href="#"><span>Change Plan</span></a>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="foot">
+	<ul>
+		<li><a href="#">About Zuora</a></li>
+		<li><a href="#">News & Press</a></li>
+		<li><a href="#">Privacy</a></li>
+		<li><a href="#">Careers</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+	<p>Copyright &copy; 2008, Zuora Inc. All Rights Reserved. Various trademarks held by their respective owners.</p>
+</div>
+</body>
+</html>

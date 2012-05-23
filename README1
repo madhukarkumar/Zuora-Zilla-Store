@@ -1,0 +1,5 @@
+This is a sample reference Zuora store to demonstrate use of Zuora APIs using PHP.
+This sample store has the following use cases:
+1. Display Products created in Zuora by Base Product and Add On Product.
+2. Allow end user to sign up in a single step. The subscribe page accepts Account Info, Credit card in a PCI compliant Hosted Payment Page iFrame and creates a Billing Account in Zuora, creates a subscription, generates an invoice and collect payment with the credit card. This page also creates a corresponding Account object in Salesforce and populates Zuora Billing Account with the Salesforce Account Id.
+3. This sample store then displays what the end user just bought and the other information related to the Account.

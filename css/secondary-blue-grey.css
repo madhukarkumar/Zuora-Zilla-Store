@@ -1,0 +1,55 @@
+/* ************************************************************************* */
+				           /* SECONDARY BLUE GREY */
+/* ************************************************************************* */
+
+
+/*---------------------------------------------------------------*/
+/* LINKS + LISTS
+/*---------------------------------------------------------------*/
+a, p a strong, .link-top {color:#707188;}
+#horizontal_nav ul a:hover, #horizontal_nav ul .current_page_item {background:url(../images/secondary-blue-grey/bg-horz-active.jpg) 100% 0 no-repeat;}
+#horizontal_nav ul .current_page_item span, #horizontal_nav ul a:hover span {background:url(../images/secondary-blue-grey/bg-horz-active.jpg) no-repeat;}
+.nav_right_sub_nav ul a:hover,
+.nav_right_sub_nav ul li.current_page_item a {background:url(../images/secondary-blue-grey/sprite.png) 0px -39px no-repeat !important;}
+#sub_nav ul a:hover,
+#sub_nav ul li.current_page_item a {background:url(../images/secondary-blue-grey/sprite.png) 0px 0px no-repeat;}
+#sub_nav ul ul a,
+#sub_nav ul ul a:hover,
+.list li,
+#sidebar ul li,
+#sub_nav ul li.current_page_item ul li a,
+#sub_nav ul li.current_page_parent ul li.current_page_item a {background:url(../images/secondary-blue-grey/bullet1.png) 0 9px no-repeat !important;color:#707188 !important;}
+#sub_nav ul li.current_page_item .children a {background:url(../images/secondary-blue-grey/bullet1.png) 0 9px no-repeat;padding:4px 0 1px 14px;color:#666;}
+#sub_nav ul li.current_page_item .children a:hover {text-decoration:underline;background:url(../images/secondary-blue-grey/bullet1.png) 0 9px no-repeat;color:#666;}
+#sub_nav ul .children .current_page_item a, #sub_nav ul .children .current_page_item a:hover {background:url(../images/secondary-blue-grey/bullet1.png) 0 9px no-repeat;padding:4px 0 1px 14px;color:#4A4A5C;font-weight:bold;}
+#sub_nav ul .children .current_page_item .children a {font-weight: normal;}
+.list2 li {background:url(../images/secondary-blue-grey/bullet2.png) 0 9px no-repeat !important;padding:5px 0 0 19px;}
+.list3 li {background:url(../images/secondary-blue-grey/bullet3.png) 0 10px no-repeat !important;padding:5px 0 0 18px;}
+.list4 li {background:url(../images/secondary-blue-grey/bullet4.png) 0 9px no-repeat !important;}
+
+
+
+
+/*---------------------------------------------------------------*/
+/* LAYOUT
+/*---------------------------------------------------------------*/
+.home-bnr-jquery {background:#5C6274 url(../images/secondary-blue-grey/bg-jquery-bnr.jpg) 0 0 no-repeat;color: #FFF;}
+#main .tools {background:url(../images/secondary-blue-grey/bg-tools-c.jpg) repeat-y;color:#fff;}
+#main .tools .holder {background:url(../images/secondary-blue-grey/bg-tools-t.jpg) no-repeat;}
+#main .tools .frame {background:url(../images/secondary-blue-grey/bg-tools-b.jpg) 0 100% no-repeat;height:1%;overflow:hidden;padding:18px 22px 0 20px;}
+/* jQuery2 */
+.home-bnr-jquery ul {background-image: url(../images/secondary-blue-grey/6.gif);background-position:center;background-repeat: no-repeat;}
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/* MISC
+/*---------------------------------------------------------------*/
+.post_content {background: url(../images/secondary-blue-grey/bg-post-content.png) 577px 0px no-repeat;}
+.search-form .text {background:url(../images/secondary-blue-grey/sprite.png) -66px -78px no-repeat;}
+.tabset .ui-state-active, .tabset .active, .tabset a:hover {background:url(../images/secondary-blue-grey/bg-horz-active.jpg) 100% 0 no-repeat;}
+.tabset .ui-state-active span, .tabset .active span, .tabset a:hover span {background:url(../images/secondary-blue-grey/bg-horz-active.jpg) no-repeat;}
+.karma-pages a:active,.karma-pages span.current, .wp-pagenavi a:active,.wp-pagenavi span.current {background: url(../images/secondary-blue-grey/sprite.png) -66px -107px no-repeat;}
+.home-bnr-jquery .home-banner-main h2{text-shadow:1px 1px 1px #222;}
