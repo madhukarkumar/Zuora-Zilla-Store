@@ -158,7 +158,7 @@ function cmpInv( $a, $b )
 
 
 
-function makeZuoraSubscription($crmId, $email, $firstName, $lastName, $phone, $accountName, $country, 
+function makeZuoraSubscription($crmId, $email, $firstName, $lastName, $phone, $company, $country, 
 		$address1, $address2, $city, $state, $postalcode, $paymentmethodid, $ratePlans){
 	global $instance;
 	global $username;
@@ -180,7 +180,7 @@ function makeZuoraSubscription($crmId, $email, $firstName, $lastName, $phone, $a
 		$account->AutoPay = 0;
 		$account->CrmId = $crmId;
 		$account->Currency = "USD";
-		$account->Name = $accountName;
+		$account->Name = $email;
 		$account->PaymentTerm = "Net 30";
 		$account->Batch = "Batch1";
 		$account->BillCycleDay = $mday;

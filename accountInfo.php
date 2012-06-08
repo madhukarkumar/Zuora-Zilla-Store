@@ -21,7 +21,7 @@ $postParams = array();
 
 function stripToAlphaNumeric($str){
 	//return ereg_replace("/[^A-Za-z0-9.@,!#$%&*+-/=?^_`{|}~ ]/", "", $str );
-return htmlentities($str);
+	return htmlentities($str);
 }
 
 foreach ($_GET as $postKey => $postValue)
@@ -231,14 +231,14 @@ $iframeUrl = $appUrl . "/apps/PublicHostedPaymentMethodPage.do?" .
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Subscribe Now</title>
-		<link href='css/layout.css' rel='stylesheet' type='text/css' />
+<link href='css/layout.css' rel='stylesheet' type='text/css' />
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js" /></script>
 <script type="text/javascript" src="js/jquery.cookie.js" /></script>
 <script type="text/javascript" src="js/function.js" /></script>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/karma-teal-grey.css">
-<script type="text/javascript">var SlideDeckLens={};</script><script type='text/javascript' src='http://sigmaestimates.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type="text/javascript">var SlideDeckLens={};</script>
 <link href="css/nav.css" rel="stylesheet" type="text/css" />
 
 		<script type='text/javascript' src='js/jquery.js' ></script>
@@ -313,6 +313,7 @@ $iframeUrl = $appUrl . "/apps/PublicHostedPaymentMethodPage.do?" .
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4993" id="menu-item-4993"><a href="#">News &amp; Events</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4988" id="menu-item-4988"><a href="#">Contact Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994" id="menu-item-4994"><a href="#">Support</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994" id="menu-item-4994"><a href="logout.php">Log Out</a></li>
   </ul>
   </div><!-- end toolbar-left -->
 
@@ -486,7 +487,7 @@ foreach($postQtyParams as $postQtyParam){
 						<a class='button1_style l_anniu'><input class="l_anniu"  type='submit' value='Change Quantities' onClick='setupQuantities()'/></a>
 					</fieldset>
 					<fieldset class='form_edit_area'>
-			        	<div class='total_label'><b>Total of first invoice <br>(before tax)</b></div>
+			        	<div class='total_label'><b>Total of first invoice (before tax)</b></div>
 			        	<div class='total_price'>
 							<p><b> $<?=  number_format($totalAmount, 2, '.', ',') ?> </b></p>
 						</div>

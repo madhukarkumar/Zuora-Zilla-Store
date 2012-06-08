@@ -33,7 +33,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>zuora</title>
+<title>Account Detail</title>
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <link href="css/layout.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js" /></script>
@@ -41,7 +41,7 @@
 <script type="text/javascript" src="js/function.js" /></script>
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/karma-teal-grey.css">
-<script type="text/javascript">var SlideDeckLens={};</script><script type='text/javascript' src='http://sigmaestimates.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type="text/javascript">var SlideDeckLens={};</script><script type='text/javascript' src='#'></script>
 <link href="css/nav.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -54,12 +54,13 @@
 
       <div class="toolbar-left">  
   <ul class="sf-js-enabled">
-  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5172" id="menu-item-5172"><a href="http://sigmaestimates.com/">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4987" id="menu-item-4987"><a href="http://sigmaestimates.com/blog/">Blog</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5192" id="menu-item-5192"><a href="http://sigmaestimates.com/partners/">Partners</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4993" id="menu-item-4993"><a href="http://sigmaestimates.com/news/">News &amp; Events</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4988" id="menu-item-4988"><a href="http://sigmaestimates.com/contact/">Contact Us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994" id="menu-item-4994"><a href="http://sigmaestimates.com/support/">Support</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5172" id="menu-item-5172"><a href="#">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4987" id="menu-item-4987"><a href="#">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5192" id="menu-item-5192"><a href="#">Partners</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4993" id="menu-item-4993"><a href="#">News &amp; Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4988" id="menu-item-4988"><a href="#">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994" id="menu-item-4994"><a href="#">Support</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4994" id="menu-item-4994"><a href="logout.php">Log Out</a></li>
   </ul>
   </div><!-- end toolbar-left -->
 
@@ -75,42 +76,42 @@
 <div class="rays">
 <div class="header-area">
 
-<a class="logo" href="selectBaseProducts.php"><img alt="Sigma Estimates" src="images/acme-logo.png"></a>
+<a class="logo" href="selectBaseProducts.php"><img alt="logo" src="images/acme-logo.png"></a>
 
 
 
 <ul id="menu-main-nav">
-<li class="menu-item menu-item-type-custom menu-item-object-custom parent" id="item-5237"><a href="http://sigmaestimates.com/about-us/"><span><strong>About Us</strong></span></a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom parent" id="item-5237"><a href="#"><span><strong>About Us</strong></span></a>
 <div class="drop" style="display: block; height: 0px; overflow: hidden; opacity: 0;"><div class="c"><ul class="sub-menu" style="display: block; left: 0px;">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5240"><a href="http://sigmaestimates.com/about-us/overview/"><span>Overview</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5243"><a href="http://sigmaestimates.com/about-us/investors/"><span>Investors</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5365"><a href="http://sigmaestimates.com/about-us/board-of-directors/"><span>Board Of Directors</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5239"><a href="http://sigmaestimates.com/about-us/career/"><span>Careers</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5240"><a href="#"><span>Overview</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5243"><a href="#"><span>Investors</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5365"><a href="#"><span>Board Of Directors</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5239"><a href="#"><span>Careers</span></a></li>
 </ul></div></div>
 </li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom parent" id="item-5484"><a><span><strong>Products</strong></span></a>
 <div class="drop" style="display: none; height: 0px; overflow: hidden; opacity: 0;"><div class="c"><ul class="sub-menu" style="display: block; left: 0px;">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5245"><a href="http://sigmaestimates.com/products/overview/"><span>Overview</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5247"><a href="http://sigmaestimates.com/products/sigma-personal/"><span>Sigma Personal</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5279"><a href="http://sigmaestimates.com/products/sigma-professional/"><span>Sigma Professional</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5246"><a href="http://sigmaestimates.com/products/sigma-enterprise/"><span>Sigma Enterprise</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5278"><a href="http://sigmaestimates.com/products/database/"><span>Database</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5277"><a href="http://sigmaestimates.com/products/mobile/"><span>Mobile</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5245"><a href="#"><span>Overview</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5247"><a href="#"><span>Personal</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5279"><a href="#"><span>Professional</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5246"><a href="#"><span>Enterprise</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5278"><a href="#"><span>Database</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5277"><a href="#"><span>Mobile</span></a></li>
 </ul></div></div>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page parent" id="item-4984"><a href="http://sigmaestimates.com/features/"><span><strong>Solutions</strong></span></a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page parent" id="item-4984"><a href="#"><span><strong>Solutions</strong></span></a>
 <div class="drop" style="display: none; height: 0px; overflow: hidden; opacity: 0;"><div class="c"><ul class="sub-menu" style="display: block; left: 0px;">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5589"><a href="http://sigmaestimates.com/products/benefits-of-sigma-estimates/"><span>Benefits to Your Company</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5589"><a href="#"><span>Benefits to Your Company</span></a></li>
 </ul></div></div>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5178"><a href="http://sigmaestimates.com/testimonials/"><span><strong>Features</strong></span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-4983"><a href="http://sigmaestimates.com/pricing/"><span><strong>Pricing</strong></span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom" id="item-5516"><a href="http://sigmaestimates.com/store/"><span><strong>Purchase</strong></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5178"><a href="#"><span><strong>Features</strong></span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-4983"><a href="#"><span><strong>Pricing</strong></span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom" id="item-5516"><a href="#"><span><strong>Purchase</strong></span></a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom parent" id="item-5747"><a><span><strong>Resources</strong></span></a>
 <div class="drop" style="display: none; height: 0px; overflow: hidden; opacity: 0;"><div class="c"><ul class="sub-menu" style="display: block; left: 0px;">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5375"><a href="http://sigmaestimates.com/resources/use-cases/"><span>Customer Success Stories</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5376"><a href="http://sigmaestimates.com/resources/training/"><span>Training</span></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5374"><a href="http://sigmaestimates.com/resources/webinar/"><span>Webinars</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5375"><a href="#"><span>Customer Success Stories</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5376"><a href="#"><span>Training</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page" id="item-5374"><a href="#"><span>Webinars</span></a></li>
 </ul></div></div>
 </li>
 </ul>
@@ -205,12 +206,6 @@ foreach($productInfo['rateplans'] as $rateplan){
 							<td><span class="font-gray">Phone:</span></td>
 							<td><strong id="phone"></strong></td>
 						</tr>
-					</table>
-				</div>
-				
-				<div class="info_block">
-					<h4 class="font-red">Your company</h4>
-					<table cellpadding="0" cellspacing="0" border="0" width="100%">
 						<tr>
 							<td width="150"><span class="font-gray">Company:</span></td>
 							<td id="company"></td>
@@ -266,34 +261,34 @@ foreach($productInfo['rateplans'] as $rateplan){
 <div class="footer-holder">
 
 <div class="one_fourth">				<h3>Latest from the blog</h3>		<ul>
-				<li><a title="Welcome to Sigma Estimates Blog!" href="http://sigmaestimates.com/sigma-blog-is-coming-soon/">Welcome to Sigma Estimates Blog!</a></li>
+				<li><a title="Welcome to sCommerce Blog!" href="#">Welcome to Our Blog!</a></li>
 				</ul>
-		</div><div class="one_fourth"><h3>Sigma Estimates Products</h3><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5328" id="menu-item-5328"><a href="http://sigmaestimates.com/products/sigma-personal/">Sigma Personal</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5326" id="menu-item-5326"><a href="http://sigmaestimates.com/products/sigma-professional/">Sigma Professional</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5327" id="menu-item-5327"><a href="http://sigmaestimates.com/products/sigma-enterprise/">Sigma Enterprise</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5330" id="menu-item-5330"><a href="http://sigmaestimates.com/products/database/">Database</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5329" id="menu-item-5329"><a href="http://sigmaestimates.com/products/mobile/">Mobile</a></li>
+		</div><div class="one_fourth"><h3>Our Products</h3><ul class="sub-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5328" id="menu-item-5328"><a href="#/">Personal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5326" id="menu-item-5326"><a href="#">Professional</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5327" id="menu-item-5327"><a href="#">Enterprise</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5330" id="menu-item-5330"><a href="#">Database</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5329" id="menu-item-5329"><a href="#">Mobile</a></li>
 </ul></div><div class="one_fourth"><h3>Follow Us		</h3>		
 
 
 
 <ul class="social_icons">
-<li><a class="rss" onclick="window.open(this.href);return false;" href="http://sigmaestimates.com/feed/">rss</a></li>
+<li><a class="rss" onclick="window.open(this.href);return false;" href="#">rss</a></li>
 	
-<li><a onclick="window.open(this.href);return false;" class="twitter" href="http://twitter.com/#!/sigmaestimates">Twitter</a></li>
+<li><a onclick="window.open(this.href);return false;" class="twitter" href="http://twitter.com/#!/zuora">Twitter</a></li>
 </ul>
 <br>
 
 
-		</div><div class="one_fourth_last"><h3>Contact Us</h3>			<div class="textwidget"><p>Sigma Estimates</p>
-<p><a target="_blank" href="http://maps.google.com/maps?q=401+edgewater+place,Wakefield,+MA+01880&amp;hl=en&amp;sll=42.523761,-71.041&amp;sspn=0.012525,0.027874&amp;gl=us&amp;hnear=401+Edgewater+Pl,+Wakefield,+Massachusetts+01880&amp;t=m&amp;z=16">401 edgewater place<br>
-Suite 105<br>
-Wakefield, MA 01880<br>
+		</div><div class="one_fourth_last"><h3>Contact Us</h3>			<div class="textwidget"><p>Zuora</p>
+<p><a target="_blank" href="#">3400 Bridge Parkway<br>
+Suite 101<br>
+Redwood City, CA<br>
 </a></p>
-<p><a href="mailto:info@sigmaestimates.com">info@sigmaestimates.com </a></p>
-<p>Toll Free: 1-855-378-2679<br>
-Office:781-224-5601<br>
-Fax: 781-246-1967</p>
+<p><a href="mailto:info@zuora.com">info@zuora.com </a></p>
+<p>Toll Free: 1-555-555-5555<br>
+Office:1-555-555-5555<br>
+Fax: 1-555-555-5555</p>
 </div>
 		</div>
 
@@ -303,14 +298,14 @@ Fax: 781-246-1967</p>
 </div>
 <div id="footer_bottom">
   <div class="info">
-      <div id="foot_left">&nbsp;Copyright			<div class="textwidget"><p>Copyright &copy; 2012 Sigma Estimates. All rights reserved.</p>
+      <div id="foot_left">&nbsp;Copyright			<div class="textwidget">
 </div>
 	</div><!-- end foot_left -->
       <div id="foot_right"><div class="top-footer"><a class="link-top" href="#">top</a></div>
 
 <ul>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4469" id="menu-item-4469"><a>Home</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5167" id="menu-item-5167"><a href="http://sigmaestimates.com/wp-admin">Admin</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5167" id="menu-item-5167"><a href="#">Admin</a></li>
 </ul>
       
 		
@@ -318,7 +313,6 @@ Fax: 781-246-1967</p>
       </div><!-- end foot_right -->
   </div><!-- end info -->
 </div>
-<script type='text/javascript' src='http://sigmaestimates.com/wp-content/themes/Karma/truethemes_framework/js/truethemes.js?ver=2.0'></script>
 <script type="text/javascript">
 
 var enter_message = function(){
